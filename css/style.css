@@ -1,0 +1,1173 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* -------------------------------for scrollbar---------------------- */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(120deg, #3a5fc5, #4e4646); 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(120deg, #587ee6, #a79595); 
+  }
+
+/* -----------------------STARTING OF NAV SECTION----------------- */
+main .nav_bar{
+    width: 100%;
+    height: 100px;
+    background: /*linear-gradient(-120deg, #52057b, #ffffff)*/ transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    transition: all 0.5s;
+    z-index: 1000;
+}
+main .nav_bar .menu_btn{
+    position: absolute;
+}
+main .nav_bar .menu_btn > i{
+    position: relative;
+    left: 100%;
+    display: none;
+}
+main .nav_bar > .bar{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+main .logo{
+    width: 100px;
+    height: 100px;
+    background: url("../assets/images/logo.png");
+    background-size: 100% 100%;
+    filter: drop-shadow(4px 4px 5px black);
+}
+main .menu{
+    width: 700px;
+}
+main .menu ul{
+    list-style: none;
+}
+main .menu ul li{
+    display: inline-block;
+    margin-left: 20px;
+    border: 2px solid cyan;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+main .menu ul li:hover {
+    background:  linear-gradient(-120deg, rgb(111, 169, 228), #ffffff);
+}
+
+main .menu ul li a{
+    text-decoration: none;
+    font-family: 'Itim', cursive;
+    color: cyan;
+}
+.active{
+    background: white;
+}
+
+/* -----------------------ENDING OF NAV SECTION----------------- */
+
+/* -------------------------STARTING OF FIRST SECTION---------------- */
+
+
+main .first_section{
+    width: 100%;
+    height: 700px;
+    background: url("../assets/images/bg_img_index_pg.jpg");
+    background-size:110% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+main .first_section .info_box{
+    position: relative;
+    left: -200px;
+    top: -50px;
+   
+ }
+ main .first_section .info_box > h1{
+     color: white;
+     margin-bottom: 15px;
+     text-shadow: 2px 2px 5px black;
+ }
+ main .first_section .info_box > h5{
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px black;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+main .first_section .info_box > button{
+    width: 200px;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;   
+}
+main .first_section .info_box > #btn1{
+    background: rgb(0, 126, 252);
+}
+main .first_section .info_box > #btn1:hover{
+    background: rgb(4, 107, 211);
+}
+main .first_section .info_box > #btn1 > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px black;
+}
+main .first_section .info_box > #btn2{
+    color: white;
+    background: transparent;
+    border: 3px solid white;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px black;
+    margin-left: 20px;
+}
+main .first_section .info_box > #btn2:hover{
+    color: black;
+    background: white;
+    text-shadow: none;
+}
+/* ---------------------------ENDING OF FIRST SECTION-------------------- */
+
+/* -----------------------------STARTING OF SECONF SECTION-------------------- */
+main .second_section{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .second_section .para_section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ main .second_section .para_section > h1{
+     margin-bottom: 20px;
+ }
+ main .second_section .para_section > p{
+     line-height: 25px;
+     font-weight: bold;
+ }
+
+/* -------------------------------ENDING OF SECOND SECTION------------------------- */
+
+/* -----------------------------------STARTIAG OF THIRD SECTION------------------------- */
+
+main .third_section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .third_section .inner_box{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main .third_section .inner_box .left_side{
+    width: 600px;
+    height: 400px;
+}
+main .third_section .inner_box .left_side video{
+    width: 600px;
+    height: 100%;
+    position: relative;
+}
+main .third_section .inner_box .right_side{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+main .third_section .inner_box .right_side > h1{
+    line-height: 40px;
+    margin-bottom: 20px;
+
+}
+main .third_section .inner_box .right_side > p{
+    line-height: 25px;
+    margin-bottom: 20px;
+    
+}
+main .third_section .inner_box .right_side > button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background: dodgerblue;
+    color: white;
+}
+main .third_section .inner_box .right_side > button > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --------------------------------------ENDING OF THIRD SECTION----------------------------- */
+
+/* ----------------------------------------STARTING OF FOURTH SECTION----------------------------- */
+
+main .fourth_section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .fourth_section > .inner_box{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main .fourth_section > .inner_box > .right_side{
+    width: 600px;
+    height: 400px;
+    background-color: black;
+}
+main .fourth_section > .inner_box > .right_side > img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 150px;
+    top: 100px;
+    filter: drop-shadow(4px 4px 5px black);
+}
+main .fourth_section > .inner_box > .left_side{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+main .fourth_section > .inner_box > .left_side > h1{
+    line-height: 40px;
+    margin-bottom: 20px;
+
+}
+main .fourth_section > .inner_box > .left_side > p{
+    line-height: 25px;
+    margin-bottom: 20px;
+    
+}
+main .fourth_section > .inner_box > .left_side > button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background: dodgerblue;
+    color: white;
+}
+main .fourth_section > .inner_box > .left_side > button > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* -------------------------------------------ENDING OF FOURTH SECTION------------------------------- */
+
+/* -----------------------------------STARTIAG OF FIFTH SECTION------------------------- */
+
+main .fifth_section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .fifth_section > .inner_box{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main .fifth_section > .inner_box > .left_side{
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(120deg, #00b2a9, #e6b4b4);
+}
+main .fifth_section > .inner_box > .left_side video{
+    width: 600px;
+    height: 120%;
+    position: relative;
+    top: -40px;
+    transform: rotate(15deg);
+    border: 5px solid black;
+    box-shadow: 4px 4px 15px 3px black;
+}
+main .fifth_section > .inner_box > .right_side{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+main .fifth_section > .inner_box > .right_side > h1{
+    line-height: 40px;
+    margin-bottom: 20px;
+
+}
+main .fifth_section > .inner_box > .right_side > p{
+    line-height: 25px;
+    margin-bottom: 20px;
+    
+}
+main .fifth_section > .inner_box > .right_side > button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background: dodgerblue;
+    color: white;
+}
+main .fifth_section > .inner_box > .right_side > button > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --------------------------------------ENDING OF FIFTH SECTION----------------------------- */
+
+/* ----------------------------------------STARTING OF SIXTH SECTION----------------------------- */
+
+main .sisth_section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .sisth_section .inner_box{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main .sisth_section .inner_box .right_side{
+    width: 500px;
+    height: 400px;
+    background-color: black;
+}
+main .sisth_section .inner_box .right_side > img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: 2px 2px 15px 3px rgba(0,0,0,0.5);
+}
+main .sisth_section .inner_box .left_side{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+main .sisth_section .inner_box .left_side > h1{
+    line-height: 40px;
+    margin-bottom: 20px;
+
+}
+main .sisth_section .inner_box .left_side > p{
+    line-height: 25px;
+    margin-bottom: 20px;
+    
+}
+main .sisth_section .inner_box .left_side > button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background: dodgerblue;
+    color: white;
+}
+main .sisth_section .inner_box .left_side > button > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* -------------------------------------------ENDING OF SIXTH SECTION------------------------------- */
+
+/* -------------------------------------------STARTING OF SEVENTH SECTION-------------------------------- */
+main .seventh_section{
+    width: 100%;
+    height: 500px;
+    background: url("../assets/images/seven_section_bg.jpg");
+    background-size: 100% 100%;
+    margin-bottom: 50px;
+}
+main .seventh_section .inner_box{
+    width: 100%;
+    height: 100%;
+    background: rgba(241, 239, 239, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .seventh_section .inner_box .left_side{
+    width: 600px;
+    height: 500px;
+    background: url("../assets/images/seven_section_img.jpg");
+    background-size: 90% 90%;
+    position: relative;
+    top: 30px;
+    border-radius: 50px;
+    border: 5px solid gray;
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.5),
+                -4px -4px 5px 3px rgba(0,0,0,0.5);
+}
+main .seventh_section .inner_box .right_side{
+    width: 600px;
+    height: 500px;
+    padding: 100px;
+    background: transparent;
+}
+main .seventh_section .inner_box .right_side > h1, p{
+    margin-bottom: 20px;
+}
+main .seventh_section .inner_box .right_side > button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    outline: none;
+    background: transparent;
+    transition: all 0.5s;
+    
+}
+main .seventh_section .inner_box .right_side > button:hover{
+    background: gray;
+}
+main .seventh_section .inner_box .right_side > button > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+/* -------------------------------------------ENDING OF SEVENTH SECTION-------------------------------- */
+
+/* --------------------------------------------STARTING OF EIGHT SECTION---------------------------------- */
+main .eight_section{
+    width: 65%;
+    height: auto;
+    margin: auto;
+}
+main .eight_section > p{
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 250px;
+}
+main .eight_section .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+main .eight_section .grid-container .grid-item{
+    width: 450px;
+    height: 450px;
+    position: relative;
+    left: 20px;
+  }
+  main .eight_section .grid-container .grid-item:nth-child(1) > .img1{
+      width: 100%;
+      height: 250px;
+      background: url("../assets/images/grid_1.jpeg");
+      background-size: 100% 100%;
+  }
+  main .eight_section .grid-container .grid-item:nth-child(2) > .img2{
+    width: 100%;
+    height: 250px;
+    background: url("../assets/images/grid_2.png");
+    background-size: 100% 100%;
+}
+main .eight_section .grid-container .grid-item:nth-child(3) > .img3{
+    width: 100%;
+    height: 250px;
+    background: url("../assets/images/grid_3.jpg");
+    background-size: 100% 100%;
+}
+main .eight_section .grid-container .grid-item:nth-child(4) > .img4{
+    width: 100%;
+    height: 250px;
+    background: url("../assets/images/grid_4.jpg");
+    background-size: 100% 100%;
+}
+/* --------------------------------------------ENDING OF EIGHT SECTION---------------------------------- */
+
+/* --------------------------------------------STARTING OF NINTH SECTION---------------------------------- */
+
+main .ninth_section{
+    width: 100%;
+    height: auto;
+    background:  url("../assets/images/ninth_section_bg.jpg");
+    background-size: 100% 100%;
+    padding-top: 100px;
+}
+main .ninth_section >  h1, p{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+main .ninth_section > .inner_box{
+    width: 70%;
+    height: 800px;
+    margin: auto;
+ }
+ main .ninth_section > .inner_box > .upper_part{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+ }
+ main .ninth_section > .inner_box .upper_part > .left_side{
+     width: 70%;
+     height: 100%;
+     background: url("../assets/images/ninth_section_img1.jfif");
+     background-size: 100% 100%;
+     border-radius: 5px 0px 0px 5px;
+     transition: transform 0.5s ease;
+     overflow: hidden;
+ }
+ main .ninth_section .inner_box .upper_part > .left_side:hover{
+     transform: scale(1.1);
+ }
+ main .ninth_section .inner_box .upper_part > .right_side{
+    width: 30%;
+    height: 100%;
+    background: white;
+    border-radius: 0px 5px 5px 0px;
+    z-index: 2;
+}
+main .ninth_section .inner_box .upper_part > .right_side > h2,p{
+    color: black;
+    position: relative;
+    /* top: 100px; */
+    text-align: left;
+}
+ main .ninth_section .inner_box .lower_part{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+main .ninth_section .inner_box .lower_part .card{
+    width: 330px;
+    height: 100%;
+    overflow: hidden;
+}
+main .ninth_section .inner_box .lower_part .card .lower_portion{
+    background: white;
+    width: 100%;
+    height: 40%;
+    border-radius: 0px 0px 10px 10px;
+ }
+main .ninth_section .inner_box .lower_part .card:nth-child(1) > .upper_portion{
+    width: 100%;
+    height: 60%;
+    background: url("../assets/images/card1.jpg");
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0px 0px;
+    transition: transform 0.5s ease;
+}
+main .ninth_section .inner_box .lower_part .card:nth-child(1) > .upper_portion:hover{
+    transform: scale(1.1);
+}
+main .ninth_section .inner_box .lower_part .card:nth-child(2) > .upper_portion{
+    width: 100%;
+    height: 60%;
+    background: url("../assets/images/card2.jpg");
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0px 0px;
+    transition: transform 0.5s ease;
+}
+main .ninth_section .inner_box .lower_part .card:nth-child(2) > .upper_portion:hover{
+    transform: scale(1.1);
+}
+main .ninth_section .inner_box .lower_part .card:nth-child(3) > .upper_portion{
+    width: 100%;
+    height: 60%;
+    background: url("../assets/images/card3.jfif");
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0px 0px;
+    transition: transform 0.5s ease;
+}
+main .ninth_section .inner_box .lower_part .card:nth-child(3) > .upper_portion:hover{
+    transform: scale(1.1);
+}
+/* --------------------------------------------ENDING OF NINTH SECTION---------------------------------- */
+
+/* --------------------------------------------STARTING OF TENTH SECTION---------------------------------- */
+
+main .tenth_section{
+    width: 100%;
+    height: 550px;
+    background: black;
+    border-top: 15px solid dodgerblue;
+}
+main .tenth_section > .inner_box{
+    width: 80%;
+    height: 350px;
+    margin: 30px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .tenth_section > .inner_box .card{
+    width: 270px;
+    height: 300px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+}
+main .tenth_section > .inner_box .card > button{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    background: rgb(0, 126, 252);
+    position: absolute;
+    bottom: 50px;
+}
+main .tenth_section > .inner_box .card > button:hover{
+    background: rgb(4, 107, 211);
+}
+main .tenth_section > .inner_box .card > button > a{
+    text-decoration: none;
+    color: white;
+}
+/* --------------------------------------------ENDING OF TENTH SECTION---------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------For Responsive----------------------- */
+
+@media (max-width:600px){
+
+    /* -----------------------STARTING OF NAV SECTION----------------- */
+
+    main .nav_bar{
+        display: block;
+    }
+    main .nav_bar .menu_btn > i{
+        display: block;
+        top: 30px;
+        color: #b2a9;
+        z-index: 2000;
+    }
+    main .logo{
+        margin: auto;
+        filter: drop-shadow(4px 4px 5px black);
+        display: none;
+        }
+    main .menu{
+        width:100%;
+        position: absolute;
+        left: 0px;
+        display: none;
+        background:  linear-gradient(-120deg, rgb(111, 169, 228), #ffffff, #b2a9);
+    }
+    main .menu ul{
+        
+    }
+    main .menu ul li{
+        display: block;
+        margin-bottom: 20px;
+        border: none;
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    main .menu ul li a{
+        color: rgb(21, 40, 70);
+    }
+    main .menu ul li:hover {
+        background:  linear-gradient(-120deg, rgb(111, 169, 228), #ffffff, #b2a9);
+        font-size: 25px;
+    }
+    main .menu ul li:nth-child(1):hover {
+        background:  linear-gradient(-120deg, rgb(111, 169, 228), #ffffff, #b2a9);
+        font-size: 25px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .active{
+        background: transparent;
+    }
+    /* -----------------------ENDING OF NAV SECTION----------------- */
+
+    /* -------------------------STARTING OF FIRST SECTION---------------- */
+
+
+main .first_section{
+  height: 500px;
+}
+main .first_section .info_box{
+ position: absolute;
+ left: 0px;
+ top: 500px;
+ width: 100%;
+ height: 250px;  
+ background: rgb(58, 56, 56);
+ padding-left: 30px;
+ }
+ main .first_section .info_box > h1{
+   font-size: 30px;
+   margin-top: 15px;
+ }
+ main .first_section .info_box > h5{
+  position: absolute;
+  top: 150px;
+}
+main .first_section .info_box > button{
+    margin-left: 0px
+}
+main .first_section .info_box > #btn1{
+    
+}
+main .first_section .info_box > #btn1:hover{
+}
+main .first_section .info_box > #btn1 > a{
+   
+}
+main .first_section .info_box > #btn2{
+    margin-left: 20px;
+}
+main .first_section .info_box > #btn2:hover{
+    
+}
+/* ---------------------------ENDING OF FIRST SECTION-------------------- */
+
+/* -----------------------------STARTING OF SECOND SECTION-------------------- */
+main .second_section{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 350px;
+    padding-left: 30px;
+    align-items:flex-start;
+}
+main .second_section .para_section{
+    width: 90%;
+    height: 100%;
+    text-align: left;
+    align-items:flex-start;
+    position: relative;
+    top: -50px;
+ }
+ main .second_section .para_section > h1{
+     font-size: 30px;
+ }
+ main .second_section .para_section > p{
+     font-weight: bold;
+ }
+
+/* -------------------------------ENDING OF SECOND SECTION------------------------- */
+
+/* -----------------------------------STARTIAG OF THIRD SECTION------------------------- */
+
+main .third_section{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 450px;
+    padding-left:30px ;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+}
+main .third_section .inner_box{
+    flex-direction: column;
+}
+main .third_section .inner_box .left_side{
+    width: 400px;
+    height: 400px;
+}
+main .third_section .inner_box .left_side video{
+    width: 400px;
+}
+main .third_section .inner_box .right_side{
+    width: 500px;
+    height: 400px;
+    padding-left: 50px;
+}
+
+/* --------------------------------------ENDING OF THIRD SECTION----------------------------- */
+
+/* -----------------------------------STARTIAG OF FOURTH SECTION------------------------- */
+
+main .fourth_section{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 450px;
+    padding-left:30px ;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+main .fourth_section .inner_box{
+    flex-direction: column;
+}
+main .fourth_section .inner_box .right_side{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    top: -100px;
+}
+main .fourth_section .inner_box .right_side > img{
+    left: 60px;
+    top: 50px;
+}
+main .fourth_section .inner_box .left_side{
+    width: 500px;
+    height: 400px;
+    padding-left: 50px;
+    position: absolute;
+    top: 200px;
+}
+main .fourth_section .inner_box .left_side > h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+main .fourth_section .inner_box .left_side > p{
+    font-size: 15px;
+}
+
+/* --------------------------------------ENDING OF FOURTH SECTION----------------------------- */
+
+/* -----------------------------------STARTIAG OF FIFTH SECTION------------------------- */
+
+main .fifth_section{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 450px;
+    padding-bottom: 20px;
+}
+main .fifth_section .inner_box{
+    flex-direction: column;
+    
+}
+main .fifth_section .inner_box .left_side{
+    width: 350px;
+    height: 200px;
+}
+main .fifth_section .inner_box .left_side video{
+    width: 300px;
+    transform: rotate(20deg);
+    border: 2px solid black;
+    border-radius: 50%;
+    top: -15px;
+    left: 20px;
+}
+main .fifth_section .inner_box .right_side{
+    width: 480px;
+    height: 400px;
+    padding-left: 50px;
+}
+main .fifth_section .inner_box .right_side > p{
+    font-size: 15px;
+}
+
+/* --------------------------------------ENDING OF FIFTH SECTION----------------------------- */
+
+/* -----------------------------------STARTIAG OF SIXTH SECTION------------------------- */
+
+main .sisth_section{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    top: 450px;
+    padding-left:30px ;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+main .sisth_section .inner_box{
+    flex-direction: column;
+}
+main .sisth_section .inner_box .right_side{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    top: -150px;
+}
+main .sisth_section .inner_box .right_side > img{
+    left: 20px;
+    top: 20px;
+}
+main .sisth_section .inner_box .left_side{
+    width: 450px;
+    height: 400px;
+    padding-left: 50px;
+    position: absolute;
+    top: 200px;
+}
+main .sisth_section .inner_box .left_side > h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+main .sisth_section .inner_box .left_side > p{
+    font-size: 15px;
+}
+
+/* --------------------------------------ENDING OF SIXTH SECTION----------------------------- */
+
+/* -------------------------------------------STARTING OF SEVENTH SECTION-------------------------------- */
+main .seventh_section{
+    height: 500px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 450px;
+}
+main .seventh_section .inner_box{
+    background: rgba(241, 239, 239, 0.5);
+    flex-direction: column;
+}
+main .seventh_section .inner_box .left_side{
+    width: 80%;
+    height: 500px;
+    background-size: 90% 90%;
+    position: relative;
+    top: 30px;
+}
+main .seventh_section .inner_box .right_side{
+    width: 480px;
+    height: 500px;
+    padding: 50px;
+    background: transparent;
+    position: absolute;
+    top: 510px;
+}
+main .seventh_section .inner_box .right_side > h1, p{
+}
+main .seventh_section .inner_box .right_side > button{
+}
+main .seventh_section .inner_box .right_side > button:hover{
+    background: white;
+}
+main .seventh_section .inner_box .right_side > button > a{
+    color: gray;
+
+}
+/* -------------------------------------------ENDING OF SEVENTH SECTION-------------------------------- */
+
+/* --------------------------------------------STARTING OF EIGHT SECTION---------------------------------- */
+main .eight_section{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 750px;
+}
+main .eight_section > p{
+    text-align: left;
+    width: 80%;
+    position: relative;
+    left: 50px;
+}
+main .eight_section .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+main .eight_section .grid-container .grid-item{
+    width: 450px;
+    height: 450px;
+    position: relative;
+    left: 20px;
+  }
+  main .eight_section .grid-container .grid-item:nth-child(1) > .img1{
+      width: 100%;
+      height: 250px;
+      background: url("../assets/images/grid_1.jpeg");
+      background-size: 100% 100%;
+  }
+  main .eight_section .grid-container .grid-item:nth-child(2) > .img2{
+    width: 100%;
+    height: 250px;
+    background: url("../assets/images/grid_2.png");
+    background-size: 100% 100%;
+}
+main .eight_section .grid-container .grid-item:nth-child(3) > .img3{
+    width: 100%;
+    height: 250px;
+    background: url("../assets/images/grid_3.jpg");
+    background-size: 100% 100%;
+}
+main .eight_section .grid-container .grid-item:nth-child(4) > .img4{
+    width: 100%;
+    height: 250px;
+    background: url("../assets/images/grid_4.jpg");
+    background-size: 100% 100%;
+}
+/* --------------------------------------------ENDING OF EIGHT SECTION---------------------------------- */
+
+/* --------------------------------------------STARTING OF NINTH SECTION---------------------------------- */
+
+main .ninth_section{
+    height:1350px ;
+    position: relative;
+    top: 750px;
+}
+main .ninth_section >  h1, p{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+main .ninth_section > .inner_box{
+    width: 70%;
+    height: 800px;
+    margin: auto;
+ }
+ main .ninth_section > .inner_box > .upper_part{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+ }
+ main .ninth_section > .inner_box .upper_part > .left_side{
+     width: 100%;
+ }
+ main .ninth_section .inner_box .upper_part > .right_side{
+    width: 100%;
+}
+main .ninth_section .inner_box .upper_part > .right_side > h2,p{
+    color: black;
+    /* top: 100px; */
+    text-align: center;
+}
+ main .ninth_section .inner_box .lower_part{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+main .ninth_section .inner_box .lower_part .card{
+    width: 330px;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+main .ninth_section .inner_box .lower_part .card .lower_portion{
+    background: white;
+    width: 100%;
+    height: 40%;
+    border-radius: 0px 0px 10px 10px;
+ }
+main .ninth_section .inner_box .lower_part .card:nth-child(1) > .upper_portion{
+    width: 100%;
+    height: 60%;
+    background: url("../assets/images/card1.jpg");
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0px 0px;
+    transition: transform 0.5s ease;
+}
+/* --------------------------------------------ENDING OF NINTH SECTION---------------------------------- */
+
+/* --------------------------------------------STARTING OF TENTH SECTION---------------------------------- */
+
+main .tenth_section{
+    width: 100%;
+    height: 1300px;
+    background: black;
+    border-top: 15px solid dodgerblue;
+    position: relative;
+    top: 800px;
+}
+main .tenth_section > p{
+    position: relative;top: 60%;
+ }
+main .tenth_section > .inner_box{
+    height: 350px;
+    flex-direction: column;
+}
+main .tenth_section > .inner_box .card{
+    margin-bottom: 50px;
+}
+main .tenth_section > .inner_box .card > button{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    background: rgb(0, 126, 252);
+    position: relative;
+    bottom: 0px;
+}
+main .tenth_section > .inner_box .card > button:hover{
+    background: rgb(4, 107, 211);
+}
+main .tenth_section > .inner_box .card > button > a{
+    text-decoration: none;
+    color: white;
+}
+/* --------------------------------------------ENDING OF TENTH SECTION---------------------------------- */
+}
+
+
